@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Card from './Card';
+import image from './card.png'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div>
+      <Card img={image} title="Editor's Picks" subTitle="Gifts for Him" desc="For Valentine's Day" />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
